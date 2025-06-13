@@ -1,4 +1,4 @@
-const apiUrl = `http://localhost:3001`; // 環境変数依存にする
+const apiUrl = import.meta.env.VITE_API_URL;
 export const registerUser = async (
     username: string,
     password: string
