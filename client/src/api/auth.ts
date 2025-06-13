@@ -1,4 +1,8 @@
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL;
+if (!apiUrl) {
+  throw new Error("REACT_APP_API_URL is not defined in your environment variables.");
+}
+
 export const registerUser = async (
     username: string,
     password: string
