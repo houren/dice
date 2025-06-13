@@ -1,2 +1,2 @@
+$ npm install
 $ npm start
-でうごく（環境変数をいじってないのでうごかない
